@@ -14,8 +14,8 @@ import android.widget.TextView
 
 class catalogo : AppCompatActivity() {
 
-    var adapter: PeliculaAdapter? = null
-    var seriesAdapter: PeliculaAdapter? = null
+    var adapter: PeliculaAdapter?=null
+    var seriesAdapter: PeliculaAdapter?=null
     var peliculas = ArrayList<Pelicula>()
     var series = ArrayList<Pelicula>()
 
@@ -71,7 +71,7 @@ class catalogo : AppCompatActivity() {
                 "the &quot;Bug&quot; race. He takes the body of a farmer (Vincent D'Onofrio) and heads to New York.\n" +
                 "He is searching for a super energy source called &quot;The Galaxy&quot;. Now, Agents J and K must\n" +
                 "stop the bug before it can escape with the galaxy."))
-        peliculas.add(Pelicula("Toy Story",R.drawable.toystory,R.drawable.toystoryheader,"Toy Story is about the &#39;secret life of toys&#39; when people are not around. When Buzz\n" +
+        peliculas.add(Pelicula("Toy Story",R.drawable.toystory,R.drawable.toystoryheader,"Toy Story is about the 'secret life of toys' when people are not around. When Buzz\n" +
                 "Lightyear, a space-ranger, takes Woody's place as Andy's favorite toy, Woody doesn't like\n" +
                 "the situation and gets into a fight with Buzz. Accidentaly Buzz falls out the window and\n" +
                 "Woody is accused by all the other toys of having killed him. He has to go out of the house\n" +
@@ -102,18 +102,17 @@ class catalogo : AppCompatActivity() {
                 "identifying the long-dead bodies of missing persons by their bone structure. But both Agent Booth\n" +
                 "and Dr. Brennan and her team come up again a variety of interference from red tape, corruption,\n" +
                 "and local noncooperation."))
-        series.add(Pelicula("Suits",R.drawable.suits,R.drawable.suitsheader,
-                "While running from a drug deal gone bad, brilliant young college dropout Mike Ross slips into a job\n" +
-                        "interview with one of New York City's best legal closers, Harvey Specter. Tired of cookie-cutter law-\n" +
-                        "school grads, Harvey takes a gamble by hiring Mike on the spot after recognizing his raw talent and\n" +
-                        "photographic memory. Mike and Harvey are a winning team. Although Mike is a genius, he still has\n" +
-                        "a lot to learn about law; and while Harvey might seem like an emotionless, cold-blooded shark,\n" +
-                        "Mike's sympathy and concern for their cases and clients will help remind Harvey why he went into\n" +
-                        "law in the first place. Mike's other allies in the office include the firm's best paralegal Rachel and\n" +
-                        "Harvey's no-nonsense assistant Donna. Proving to be an irrepressible duo and invaluable to the\n" +
-                        "practice, Mike and Harvey must keep their secret from everyone including managing partner\n" +
-                        "Jessica and Harvey's archnemesis Louis, who seems intent on making Mike's life as difficult as\n"+
-                        "possible.")
+        series.add(Pelicula("Suits",R.drawable.suits,R.drawable.suitsheader, "While running from a drug deal gone bad, brilliant young college dropout Mike Ross slips into a job\n" +
+                "interview with one of New York City's best legal closers, Harvey Specter. Tired of cookie-cutter law-\n" +
+                "school grads, Harvey takes a gamble by hiring Mike on the spot after recognizing his raw talent and\n" +
+                "photographic memory. Mike and Harvey are a winning team. Although Mike is a genius, he still has\n" +
+                "a lot to learn about law; and while Harvey might seem like an emotionless, cold-blooded shark,\n" +
+                "Mike's sympathy and concern for their cases and clients will help remind Harvey why he went into\n" +
+                "law in the first place. Mike's other allies in the office include the firm's best paralegal Rachel and\n" +
+                "Harvey's no-nonsense assistant Donna. Proving to be an irrepressible duo and invaluable to the\n" +
+                "practice, Mike and Harvey must keep their secret from everyone including managing partner\n" +
+                "Jessica and Harvey's archnemesis Louis, who seems intent on making Mike's life as difficult as\n"+
+                "possible.")
         )
     }
 
@@ -143,19 +142,19 @@ class catalogo : AppCompatActivity() {
             var inflador = context!!.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
             var vista =  inflador.inflate(R.layout.peliculas, null)
 
-            var image = vista.findViewById(R.id.image_movie_cell) as ImageView
-            var title = vista.findViewById(R.id.movie_title_cell) as TextView
+            var image : ImageView = vista.findViewById(R.id.image_movie_cell) as ImageView
+            var title : TextView = vista.findViewById(R.id.movie_title_cell) as TextView
 
             image.setImageResource(pelicula.image)
             title.setText(pelicula.titulo)
 
             image.setOnClickListener {
-                val intent = Intent(context, detalle_pelicula::class.java)
-                intent.putExtra("titulo", pelicula.titulo)
-                intent.putExtra("image", pelicula.image)
-                intent.putExtra("header", pelicula.header)
-                intent.putExtra("sinopsis", pelicula.sinopsis)
-                context!!.startActivity(intent)
+                val intento = Intent(context, detalle_pelicula::class.java)
+                intento.putExtra("titulo", pelicula.titulo)
+                intento.putExtra("image", pelicula.image)
+                intento.putExtra("header", pelicula.header)
+                intento.putExtra("sinopsis", pelicula.sinopsis)
+                context!!.startActivity(intento)
             }
             return vista
         }

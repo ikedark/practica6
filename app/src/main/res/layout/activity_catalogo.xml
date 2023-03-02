@@ -28,13 +28,12 @@
         <View
             android:layout_width="match_parent"
             android:layout_height="2dp"
+            android:textColor="@color/yellow"
             android:background="@color/yellow"
             android:layout_marginHorizontal="15dp"
             android:layout_marginTop="33dp"
             />
     </LinearLayout>
-
-
     
     <GridView
         android:id="@+id/movies_catalogo"
@@ -50,6 +49,15 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
+        <View
+            android:layout_width="250dp"
+            android:layout_height="2dp"
+            android:textColor="@color/yellow"
+            android:background="@color/yellow"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginTop="33dp"
+            />
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -62,13 +70,7 @@
             android:layout_marginLeft="20dp"
             android:layout_marginTop="20dp"/>
 
-        <View
-            android:layout_width="250dp"
-            android:layout_height="2dp"
-            android:background="@color/yellow"
-            android:layout_marginHorizontal="15dp"
-            android:layout_marginTop="33dp"
-            />
+
     </LinearLayout>
 
     <GridView
