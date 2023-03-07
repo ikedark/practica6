@@ -32,10 +32,10 @@
 
         <TextView
             android:id="@+id/tv_pelicula_desc"
-            android:layout_marginTop="18dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingHorizontal="25dp"
+            android:layout_marginTop="10dp"
+            android:paddingHorizontal="30dp"
             android:textSize="14sp"
             android:text="Aqui descripción de pelicula"
             android:textColor="@color/yellow"/>

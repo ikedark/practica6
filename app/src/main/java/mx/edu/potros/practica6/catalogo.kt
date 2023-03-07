@@ -47,7 +47,7 @@ class catalogo : AppCompatActivity() {
                 " and his close friends: adrenaline junkie Go Go Tomago\n" +
                 ", neatnik Wasabi, chemistry whiz Honey Lemon, and fanboy Fred.\n" +
                 " Determined to uncover the mystery, Hiro transforms his friends\n" +
-                " into a band of high-tech heroes called “Big Hero 6.”",arrayListOf<Cliente>()))
+                " into a band of high-tech heroes called \"Big Hero 6\"",arrayListOf<Cliente>()))
         peliculas.add(Pelicula("Inception",R.drawable.inception,R.drawable.inceptionheader,"Dom Cobb is a skilled thief, the absolute best in the dangerous art of extraction, stealing\n" +
                 "valuable secrets from deep within the subconscious during the dream state, when the\n" +
                 "mind is at its most vulnerable. Cobb's rare ability has made him a coveted player in this\n" +
@@ -65,11 +65,11 @@ class catalogo : AppCompatActivity() {
                 "innkeeper, however, her cross-country odyssey just might result in her getting engaged.",arrayListOf<Cliente>()))
         peliculas.add(Pelicula("Men in Black",R.drawable.mib,R.drawable.mibheader,"Based off of the comic book. Unbeknownst to other people, there is a private agency code\n" +
                 "named MiB. This agency is some kind of extra terrestrial surveillance corporation. Then,\n" +
-                "one of the agency's finest men only going by the name &quot;K&quot; (Tommy Lee Jones) , is\n" +
+                "one of the agency's finest men only going by the name \"K\" (Tommy Lee Jones) , is\n" +
                 "recruiting for a new addition to the agency. He has chosen James Edwards (Will Smith) of\n" +
                 "the N.Y.P.D. Then, one day, a flying saucer crashes into Earth. This was an alien a part of\n" +
-                "the &quot;Bug&quot; race. He takes the body of a farmer (Vincent D'Onofrio) and heads to New York.\n" +
-                "He is searching for a super energy source called &quot;The Galaxy&quot;. Now, Agents J and K must\n" +
+                "the \"Bug\" race. He takes the body of a farmer (Vincent D'Onofrio) and heads to New York.\n" +
+                "He is searching for a super energy source called  '\"The Galaxy\"'. Now, Agents J and K must\n" +
                 "stop the bug before it can escape with the galaxy.",arrayListOf<Cliente>()))
         peliculas.add(Pelicula("Toy Story",R.drawable.toystory,R.drawable.toystoryheader,"Toy Story is about the 'secret life of toys' when people are not around. When Buzz\n" +
                 "Lightyear, a space-ranger, takes Woody's place as Andy's favorite toy, Woody doesn't like\n" +
@@ -81,7 +81,7 @@ class catalogo : AppCompatActivity() {
         series.add(Pelicula("Dr. House",R.drawable.drhouse,R.drawable.househeader,"The series follows the life of anti-social, pain killer addict, witty and arrogant medical doctor Gregory\n" +
                 "House (Hugh Laurie) with only half a muscle in his right leg. He and his team of medical doctors try\n" +
                 "to cure complex and rare diseases from very ill ordinary people in the United States of America.",arrayListOf<Cliente>()))
-        series.add(Pelicula("Dr. Who",R.drawable.drwho,R.drawable.drwhoheader,"Traveling across time and space, the immortal time-lord known as &#39;The Doctor&#39; travels across the\n" +
+        series.add(Pelicula("Dr. Who",R.drawable.drwho,R.drawable.drwhoheader,"Traveling across time and space, the immortal time-lord known as \'The Doctor\' travels across the\n" +
                 "universe with his many companions and his loyal shape-shifting space-ship: The TARDIS. The\n" +
                 "Doctor faces many threats across many generations: from The Daleks, The Cybermen and his time-\n" +
                 "lord adversary The Master to the sinister Davros, creator of The Daleks.",arrayListOf<Cliente>()))
